@@ -1,0 +1,30 @@
+<h1>List os products!!</h1>
+<div class="container">
+   <button class="btn btn-success" (click)="onClick()">Addproduct</button>
+    <table class="table table-hover">
+        <thead>
+            <th>ProductId</th>
+            <th>Productname</th>
+            <th>ProducEstablishYr</th>
+            <th>ProductCost</th>
+            <th>PurchasingDate</th>
+            <th>DeliveryDate</th>
+            <th>LastUpdatedDate</th>
+            <th>ResaleValue</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of data">
+                <td>{{i.ProductId}}</td>
+                <td>{{i.ProductName}}</td>
+                <td>{{i.ProductEstablishYr}}</td>
+                <td>{{i.ProductCost}}</td>
+                <td>{{i.PrachasingDate}}</td>
+                <td>{{i.DeliveryDate}}</td>
+                <td>{{i.LastUpdatedDate}}</td>
+                <td>{{i.Resalevalue}}</td>
+                <td><a (click)="editProduct(i)"><i class="fa fa-pencil" aria-hidden="true"></i></a> |<a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,2 @@
+<app-product-edit *ngIf ="!Isclick" [product]="dataSource"></app-product-edit>
+<app-product-list *ngIf ="Isclick" (event)="datafromCtP($event)"></app-product-list>

@@ -1,0 +1,36 @@
+<h1>employee-list works!</h1>
+<!-- <p>{{data | Json}}</p> -->
+<div class="container">
+    <button id="button" class="btn btn-success btn-md" (click)="onClick()">AddEmp</button>
+    <table class="table tabble-hover">
+        <thead>
+            <th>EmpId</th>
+            <th>EmpName</th>
+            <th>EmpAge</th>
+            <th>EmpSalary</th>
+            <th>EmpStatus</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of data">
+                <!-- <td>{{i.EmpId}}</td>
+                <td>{{i.EmpName}}</td>
+                <td>{{i.Empage}}</td>
+                <td>{{i.Empsalary}}</td>
+                <td>{{i.Empstatus}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Address}}</td> -->
+                <td>{{i.EmpId}}</td>
+                <td>{{i.EmpName}}</td>
+                <td>{{i.Empage}}</td>
+                <td>{{i.Empsalary}}</td>
+                <td>{{i.Empstatus}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Addres}}</td>
+                <td><a [routerLink]="['/employee/edit/',i.EmpId]"><i class="fa fa-pencil" aria-hidden="true"></i></a> | <a (click)="deleteEmp(i.EmpId)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

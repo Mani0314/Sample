@@ -1,0 +1,36 @@
+<h1>Students-list</h1>
+<div class="container">
+    <button class="btn btn-success btn-md" (click)="onClick()">AddStudent</button>
+    <table class="table table-hover">
+        <thead>
+            <th>StudentId</th>
+            <th>Studentname</th>
+            <th>Studentage</th>
+            <th>StudentRollnumber</th>
+            <th>JoiningDate</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <!-- <th>CreatedDate</th>
+            <th>DeletedDate</th>
+            <th>UpdatedDate</th> -->
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of data">
+                <td>{{i.StudentId}}</td>
+                <td>{{i.Studentname}}</td>
+                <td>{{i.Studentage}}</td>
+                <td>{{i.StudentRollnumber}}</td>
+                <td>{{i.JoiningDate}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Phone}}</td>
+                <td>{{i.Address}}</td>
+                <!-- <td>{{i.CreatedDate}}</td>
+                <td>{{i.DeletedDate}}</td>
+                <td>{{i.UpdatedDate}}</td> -->
+                <td><a (click)="editStudent(i)"><i class="fas fa-edit"></i></a> | <a (click)="delete(i.StudentId)"><i class="fas fa-trash-alt"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

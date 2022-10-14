@@ -1,0 +1,33 @@
+<h1>Welcome! To student-list</h1>
+<div class="container">
+    <div class="col-offset-10">
+        <input type="button" class="btn btn-success btn-md" value="AddStudent" (click)="addStudent()">
+    </div>
+    <table class="table table-hover table-responsive">
+        <thead>
+            <th>studentId</th>
+            <th>studentName</th>
+            <th>studentAge</th>
+            <th>studentRollnumber</th>
+            <th>studentJoiningDate</th>
+            <th>studentEmail</th>
+            <th>studentPhone</th>
+            <th>studentAddress</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let i of dataSource">
+                <td>{{i.StudentId}}</td>
+                <td>{{i.Studentname}}</td>
+                <td>{{i.Studentage}}</td>
+                <td>{{i.StudentRollnumber}}</td>
+                <td>{{i.JoiningDate}}</td>
+                <td>{{i.Email}}</td>
+                <td>{{i.Phone}}</td>
+                <td>{{i.Address}}</td>
+                <td>
+                    <a href="#" ><i class="fa fa-info-circle" aria-hidden="true"></i></a> |<a [routerLink]="['/edit/',i.StudentId]"><i class="fa fa-pencil" aria-hidden="true"></i> </a> |<a (click)="delete(i.StudentId)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

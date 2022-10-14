@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <h2>AddStudennt</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label class="control-form">EmployeeName</label>
+        </div>
+        <div class="col-md-6">
+           <input type="text" class="form-control" [(ngModel)]="Employee.EmpName" >
+        </div>
+     <div class="col-md-4">
+        <label class="control-form">EmployeeAge</label>
+     </div>
+     <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="Employee.Empage">
+     </div>
+     <div class="col-md-4">
+        <label class="control-form">EmployeeStatus</label>
+     </div>
+     <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="Employee.Empstatus">
+     </div>
+     <div class="col-md-4">
+        <label class="control-form">EmployeeSalary</label>
+     </div>
+     <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="Employee.Empsalary">
+     </div>
+     <div class="col-md-4">
+        <label class="control-form">EmployeeEmail</label>
+     </div>
+     <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="Employee.Email">
+     </div>
+     <div class="col-md-4">
+        <label class="control-form">Addres</label>
+     </div>
+     <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="Employee.Addres" >
+     </div>
+     <div class="col-md-6">
+        <button class="btn btn-success btn-md" (click)="addEmp()">Add</button>
+     </div>
+    </div>  
+</div>

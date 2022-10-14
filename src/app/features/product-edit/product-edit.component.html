@@ -1,0 +1,50 @@
+<h2>{{tittle}}</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <label >ProductName</label>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" [(ngModel)]="product.ProductName">
+        </div>
+       <div class="col-md-4">
+           <label>ProductEstablishYr</label>
+       </div>
+       <div class="col-md-6">
+        <input type="text" class="form-control" [(ngModel)]="product.ProductEstablishYr">
+       </div>
+       <div class="col-md-4">
+        <label>ProductCost</label>
+    </div>
+    <div class="col-md-6">
+     <input type="text" class="form-control" [(ngModel)]="product.ProductCost">
+    </div>
+    <div class="col-md-4">
+        <label>PurchasingDate</label>
+    </div>
+    <div class="col-md-6">
+     <input type="text" class="form-control" [(ngModel)]="product.PrachasingDate">
+    </div>
+    <div class="col-md-4">
+        <label>DeliveryDate</label>
+    </div>
+    <div class="col-md-6">
+     <input type="text" class="form-control" [(ngModel)]="product.DeliveryDate">
+    </div>
+    <div class="col-md-4">
+        <label>LastUpdatedDate</label>
+    </div>
+    <div class="col-md-6">
+     <input type="text" class="form-control" [(ngModel)]="product.LastUpdatedDate">
+    </div>
+    <div class="col-md-4">
+        <label>Resalevalue</label>
+    </div>
+    <div class="col-md-6">
+     <input type="text" class="form-control" [(ngModel)]="product.Resalevalue">
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-success" (click)="addProduct()">AddProduct</button>
+    </div>
+    </div>
+</div>
